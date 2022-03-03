@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <style>
+        .container {
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <body>
+         <div class="container">
+
+        <h2>Login to Receipt uploader</h2><br>
+        <p style="color:red;">{{.err}}</p>
+
+        <form method="POST" action="/account/login">
+            <label><b>Username
+            </b>
+            </label>
+            <input type="text" name="username"/>
+            <br><br>
+            <label><b>Password
+            </b>
+            </label>
+            <input type="password" name="password" />
+            <br><br>
+            <input type="submit" value="Login">
+            <br><br>
+        </form>
+</div>
+
+</body>
+</html>
