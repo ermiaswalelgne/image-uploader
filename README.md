@@ -1,22 +1,22 @@
-# Reciept-uploader
+# Image-uploader
 
-This is REST API for uploading images from user.
+This is REST API for uploading images from the user.
 
-The API has an http server
+The API has an HTTP server
 
 ##  The Backend
  Starts by creating an HTTP server using the net/http package.
 
- All the sourece files are under src directory
+ All the source files are under src directory
 <ul>
-<li> To start the http server run `go run main.go` This will run the server on localhost port 4550.
-To login to the system use  `http://localhost:4500/account `. This page have  have a loging form to authenticate users.
-For test purpose username and password are hardcoded as testuser/secret
+<li> To start the HTTP server run `go run main.go`. This will run the server on localhost port 4550.
+To login to the system use  `http://localhost:4500/account `. This page has a login form to authenticate users. 
+For test purposes username and password are hardcoded as testuser/secret, though in real-world this has to be fetched from database
 
-The login page has basic error handlng such as checking empty username and passowrds.
+The login page has basic error handling such as checking empty username and passwords.
 
-<<li> Once the user has successfully login users acan upload images.
- The maximum image sie is set to 1MB, allowd image extentionas re JPG and PNG.
+<<li> Once the user has successfully login users can upload images.
+ The maximum image size is set to 1MB, allowing image extensions re JPG and PNG.
  Images are saved under uploaded-receipts folder.
 </ul>
 
