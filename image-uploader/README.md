@@ -1,26 +1,21 @@
-# Reciept-uploader
+# Image Uploader
 
-This is REST API for uploading images from user.
+Welcome to the Image Uploader repository. This project offers a REST API for users to conveniently upload images.
 
-The API has an http server
+## Backend Details
+The backend starts by establishing an HTTP server using the `net/http` package.
 
-##  The Backend
- Start off by creating an HTTP server using the net/http package.
+All the source files reside within the `src` directory.
 
- All the soruces files are under src directory
-<ul>
-<li> To start the http server run `go run main.go` Thi will reun the server on localhost port 4550.
-To login to the system use  `http://localhost:4500/account `. This page have  have a loging form to authenticate users.
-For test purose username and password are hardcoded as testuser/secret
+- To launch the HTTP server, execute `go run main.go`. This command will initiate the server on `localhost`, port `4550`.
+- To access the system, navigate to `http://localhost:4500/account`. This page presents a login form for user authentication.
+- For testing purposes, the username and password are hardcoded as `testuser/secret`. In a real-world scenario, this data should be fetched from a database.
 
-The login page has basic error handlng such as checking empty username and passowrd
+The login page incorporates basic error handling, including checks for empty username and passwords.
 
-<<li> Once the user has successfully login users acan upload images.
- The maximum image sie is set to 1MB, allowd image extentionas re JPG and PNG.
- Images are saved under uploaded-receipts folder.
-</ul>
+- Once users successfully log in, they gain the ability to upload images.
+- Image size is limited to 1MB, with supported extensions including JPG and PNG.
+- Uploaded images are stored within the `uploaded-receipts` folder.
 
-## Front End
-<ul>
-<li> Front end  fies are under view folder, whre login forma and image uploading pages are stored
-</ul>
+## Frontend Information
+Frontend files are located in the `view` folder. Here, you will find pages containing login forms and image upload interfaces.
